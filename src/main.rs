@@ -1,10 +1,11 @@
 // Run with `RUST_LOG=debug cargo run`
 
 use axum::{
+    body::Bytes,
+    http::{HeaderMap, StatusCode},
     response::{Html, Response, IntoResponse}, 
-    routing::{get, post},
-    http::{StatusCode},
     Router,
+    routing::{get, post},
 };
 use std::net::SocketAddr;
 use tracing::{debug};
@@ -12,10 +13,6 @@ use tracing::{debug};
 #[tokio::main]
 async fn main() {
     tracing_subscriber::fmt::init();
-    // A layer that logs events to stdout using the human-readable "pretty"
-    // format.
-    // let stdout_log = tracing_subscriber::fmt::layer()
-    //     .pretty();
 
     // build our application with a route
     let app = Router::new()
@@ -36,7 +33,7 @@ async fn handler() -> Html<&'static str> {
     Html("<h1>Hello, World!</h1>")
 }
 
-async fn hook_handler() -> Response {
-    debug!("Received request");
+async fn hook_handler(headers: HeaderMap, body: Bytes) -> Response {
+    debug!(?headers, ?body, "Received request");
     (StatusCode::OK, "success").into_response()
 }
