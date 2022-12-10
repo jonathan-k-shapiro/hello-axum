@@ -1,0 +1,180 @@
+{
+  "created_at": "2022-12-08T01:34:37+00:00",
+  "id": "8F7eNqYeCLbeXzyY",
+  "invoice": {
+    "amount_due": "2930.22",
+    "auto_collection": {
+      "next_attempt_at": null,
+      "previously_attempted_at": null
+    },
+    "billing_address": null,
+    "created_at": "2022-12-07T13:34:27+00:00",
+    "currency": "USD",
+    "customer": {
+      "external_customer_id": "5f84618b-7fd9-474e-9d56-bb9cd8ed3a59",
+      "id": "TVuuhhQkz7XiE867"
+    },
+    "customer_balance_transactions": [],
+    "customer_tax_id": null,
+    "discount": null,
+    "due_date": "2023-01-05T13:34:27+00:00",
+    "hosted_invoice_url": "https://invoices.withorb.com/view?token=IjdUOHFQYzZxcU41WWRmRXMi.tfkGJprZMmDUBB6UkFLENTSMKj8",
+    "id": "7T8qPc6qqN5YdfEs",
+    "invoice_date": "2022-12-07T13:34:27+00:00",
+    "invoice_number": "KFVXAE-00003",
+    "invoice_pdf": "https://assets.withorb.com/invoice/BCCSwwPJKqzndKfg/iM4YA74zJiX3gWer",
+    "issued_at": "2022-12-08T01:34:28+00:00",
+    "line_items": [
+      {
+        "amount": "2885.16",
+        "discount": null,
+        "end_date": "2022-12-07T13:34:27+00:00",
+        "grouping": null,
+        "minimum": null,
+        "minimum_amount": null,
+        "name": "Cluster compute credits",
+        "quantity": 575.3016666666666,
+        "start_date": "2022-11-18T00:00:00+00:00",
+        "sub_line_items": [
+          {
+            "amount": "2311.10",
+            "grouping": {
+              "key": "cluster_grouping_key",
+              "value": "auction_house.xsmall_replica"
+            },
+            "matrix_config": { "dimension_values": ["us-east-1", "large"] },
+            "name": "us-east-1, large (auction_house.xsmall_replica)",
+            "quantity": 1540.7311111111112,
+            "type": "matrix"
+          },
+          {
+            "amount": "574.07",
+            "grouping": {
+              "key": "cluster_grouping_key",
+              "value": "default.r1"
+            },
+            "matrix_config": { "dimension_values": ["us-east-1", "xsmall"] },
+            "name": "us-east-1, xsmall (default.r1)",
+            "quantity": 382.7102777777778,
+            "type": "matrix"
+          }
+        ],
+        "subtotal": "2885.16",
+        "tax_amounts": [
+          {
+            "amount": "237.93",
+            "tax_rate_description": "Tax",
+            "tax_rate_percentage": "8.875"
+          }
+        ]
+      },
+      {
+        "amount": "0.00",
+        "discount": null,
+        "end_date": "2022-12-07T13:34:27+00:00",
+        "grouping": null,
+        "minimum": null,
+        "minimum_amount": null,
+        "name": "Sink compute credits",
+        "quantity": 0,
+        "start_date": "2022-11-18T00:00:00+00:00",
+        "sub_line_items": [],
+        "subtotal": "0.00",
+        "tax_amounts": [
+          {
+            "amount": "0.00",
+            "tax_rate_description": "Tax",
+            "tax_rate_percentage": "8.875"
+          }
+        ]
+      },
+      {
+        "amount": "0.00",
+        "discount": null,
+        "end_date": "2022-12-07T13:34:27+00:00",
+        "grouping": null,
+        "minimum": null,
+        "minimum_amount": null,
+        "name": "Network Egress (GB)",
+        "quantity": 0,
+        "start_date": "2022-11-18T00:00:00+00:00",
+        "sub_line_items": [],
+        "subtotal": "0.00",
+        "tax_amounts": [
+          {
+            "amount": "0.00",
+            "tax_rate_description": "Tax",
+            "tax_rate_percentage": "8.875"
+          }
+        ]
+      },
+      {
+        "amount": "0.00",
+        "discount": null,
+        "end_date": "2022-12-07T13:34:27+00:00",
+        "grouping": null,
+        "minimum": null,
+        "minimum_amount": null,
+        "name": "Storage (GB-hr)",
+        "quantity": 162.450771448,
+        "start_date": "2022-11-18T00:00:00+00:00",
+        "sub_line_items": [],
+        "subtotal": "0.00",
+        "tax_amounts": [
+          {
+            "amount": "0.00",
+            "tax_rate_description": "Tax",
+            "tax_rate_percentage": "8.875"
+          }
+        ]
+      },
+      {
+        "amount": "11.20",
+        "discount": null,
+        "end_date": "2022-12-07T13:34:27+00:00",
+        "grouping": null,
+        "minimum": null,
+        "minimum_amount": null,
+        "name": "Sources compute credits",
+        "quantity": 139.99777777777777,
+        "start_date": "2022-11-18T00:00:00+00:00",
+        "sub_line_items": [
+          {
+            "amount": "11.19",
+            "grouping": null,
+            "matrix_config": { "dimension_values": ["us-east-1", "3xsmall"] },
+            "name": "us-east-1, 3xsmall",
+            "quantity": 7.461881555555556,
+            "type": "matrix"
+          }
+        ],
+        "subtotal": "11.20",
+        "tax_amounts": [
+          {
+            "amount": "0.92",
+            "tax_rate_description": "Tax",
+            "tax_rate_percentage": "8.875"
+          }
+        ]
+      }
+    ],
+    "minimum": null,
+    "minimum_amount": null,
+    "paid_at": null,
+    "scheduled_issue_at": null,
+    "shipping_address": {
+      "city": "New York",
+      "country": "US",
+      "line1": "440 LAFAYETTE ST FL 6",
+      "line2": "",
+      "postal_code": "10003",
+      "state": "NY"
+    },
+    "status": "issued",
+    "subscription": { "id": "jGm2aKggXw37JfqY" },
+    "subtotal": "2896.36",
+    "total": "2691.36"
+  },
+  "properties": {},
+  "type": "invoice.created"
+}
