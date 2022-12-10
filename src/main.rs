@@ -10,6 +10,8 @@ use axum::{
 use std::net::SocketAddr;
 use tracing::{debug};
 
+use tower_http::trace::TraceLayer;
+
 #[tokio::main]
 async fn main() {
     tracing_subscriber::fmt::init();
@@ -18,6 +20,7 @@ async fn main() {
     let app = Router::new()
         .route("/", get(handler))
         .route("/my_event", post(hook_handler))
+        .layer(TraceLayer::new_for_http())
     ;
 
     // run it
